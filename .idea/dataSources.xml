@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="yagmurkırt" uuid="7c93af66-7c94-4d38-9fa6-ca9c40e131eb">
+      <driver-ref>3d1d77a8-7c1c-47a7-8cbe-36a799af8f90</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.firebirdsql.jdbc.FBDriver</jdbc-driver>
+      <jdbc-url>jdbc:firebirdsql://25.74.233.114:3050/C:/AKINSOFT/Wolvox7/Database_FB/yagmur2017/2017/WOLVOX.FDB?charSet=utf-8</jdbc-url>
+    </data-source>
+  </component>
+</project>

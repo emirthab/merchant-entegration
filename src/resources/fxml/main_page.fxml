@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.main_controller">
+   <children>
+      <TabPane prefHeight="700.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Başlangıç">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="601.0" style="-fx-background-color: white;">
+                     <children>
+                        <AnchorPane fx:id="anchor_main_page" layoutY="-1.0" prefHeight="668.0" prefWidth="1024.0">
+                           <children>
+                              <ImageView fx:id="settings_wolvox_logo" fitHeight="82.0" fitWidth="237.0" layoutX="27.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logos/akinsoft_wolvox_logo.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="settings_trendyol_logo" fitHeight="82.0" fitWidth="237.0" layoutX="27.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logos/trendyol_logo.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="settings_hepsiburada_logo" fitHeight="82.0" fitWidth="237.0" layoutX="27.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logos/hepsiburada_logo.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="settings_n11_logo" fitHeight="82.0" fitWidth="237.0" layoutX="317.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logos/n11_logo.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="settings_gittigidiyor_logo" fitHeight="82.0" fitWidth="237.0" layoutX="317.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logos/gittigidiyor_logo.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="settings_woocommerce_logo" fitHeight="82.0" fitWidth="237.0" layoutX="317.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logos/woocommerce_logo.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="notification_cart_trendyol_icon" fitHeight="41.0" fitWidth="40.0" layoutX="244.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@../img/icons/shopping_notification.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="notification_carttext_trendyol_icon" fill="RED" layoutX="262.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" visible="false" wrappingWidth="46.2724506855011">
+                                 <font>
+                                    <Font name="Arial Black" size="17.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="notification_cart_hepsiburada_icon" fitHeight="41.0" fitWidth="40.0" layoutX="244.0" layoutY="608.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@../img/icons/shopping_notification.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="notification_carttext_hepsiburada_icon" fill="RED" layoutX="262.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" visible="false" wrappingWidth="46.2724506855011">
+                                 <font>
+                                    <Font name="Arial Black" size="17.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="notification_cart_woocommerce_icon" fitHeight="41.0" fitWidth="40.0" layoutX="534.0" layoutY="608.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@../img/icons/shopping_notification.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="notification_carttext_woocommerce_icon" fill="RED" layoutX="552.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" visible="false" wrappingWidth="46.2724506855011">
+                                 <font>
+                                    <Font name="Arial Black" size="17.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="notification_cart_gittigidiyor_icon" fitHeight="41.0" fitWidth="40.0" layoutX="534.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@../img/icons/shopping_notification.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="notification_carttext_gittigidiyor_icon" fill="RED" layoutX="552.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" visible="false" wrappingWidth="46.2724506855011">
+                                 <font>
+                                    <Font name="Arial Black" size="17.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="notification_cart_n11_icon" fitHeight="41.0" fitWidth="40.0" layoutX="534.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@../img/icons/shopping_notification.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="notification_carttext_n11_icon" fill="RED" layoutX="552.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" visible="false" wrappingWidth="46.2724506855011">
+                                 <font>
+                                    <Font name="Arial Black" size="17.0" />
+                                 </font>
+                              </Text>
+                              <DatePicker fx:id="last_enteg_date" layoutX="27.0" layoutY="215.0" prefHeight="27.0" prefWidth="211.0" promptText="yil-ay-gun" />
+                              <Text layoutX="29.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Son Entegrasyon Tarihi" />
+                              <Button layoutX="27.0" layoutY="153.0" mnemonicParsing="false" text="Entegrasyon yap" />
+                              <Separator focusTraversable="false" layoutX="20.0" layoutY="257.0" prefHeight="11.0" prefWidth="563.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Separator>
+                              <TextField fx:id="last_enteg_hour" layoutX="244.0" layoutY="215.0" prefHeight="27.0" prefWidth="93.0" promptText="Sa.Dk.Sn" />
+                              <Button fx:id="button_save_last_enteg_time" layoutX="352.0" layoutY="215.0" mnemonicParsing="false" text="Kaydet" />
+                              <CheckBox layoutX="27.0" layoutY="123.0" mnemonicParsing="false" text="Otomatik Entegrasyon" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="anchor_page_akinsoft_properties" prefHeight="667.0" prefWidth="1024.0" visible="false">
+                           <children>
+                              <Text layoutX="30.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İP ADRESİ :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="30.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VERİTABANI DOSYA YOLU :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="30.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KULLANICI ADI :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="30.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="akinsoft_settings_ip_adress" focusTraversable="false" layoutX="221.0" layoutY="157.0" prefHeight="27.0" prefWidth="314.0" />
+                              <TextField fx:id="akinsoft_settings_file_path" focusTraversable="false" layoutX="221.0" layoutY="197.0" prefHeight="27.0" prefWidth="314.0" />
+                              <TextField fx:id="akinsoft_settings_username" focusTraversable="false" layoutX="221.0" layoutY="237.0" prefHeight="27.0" prefWidth="314.0" />
+                              <TextField fx:id="akinsoft_settings_password" focusTraversable="false" layoutX="221.0" layoutY="277.0" prefHeight="27.0" prefWidth="314.0" />
+                              <ImageView fx:id="akinsoft_settings_back_icon" fitHeight="41.0" fitWidth="40.0" layoutX="21.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons/back_icon.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logos/akinsoft_wolvox_logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="anchor_page_trendyol_settings" prefHeight="668.0" prefWidth="1024.0" visible="false">
+                           <children>
+                              <Text layoutX="30.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRENDYOL SUPPLIER ID:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="30.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="API KEY :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="30.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="API SECRET :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="trendyol_settings_supplier_id" focusTraversable="false" layoutX="221.0" layoutY="157.0" prefHeight="27.0" prefWidth="314.0" />
+                              <TextField fx:id="trendyol_settings_api_key" focusTraversable="false" layoutX="221.0" layoutY="197.0" prefHeight="27.0" prefWidth="314.0" />
+                              <TextField fx:id="trendyol_settings_api_secret" focusTraversable="false" layoutX="221.0" layoutY="237.0" prefHeight="27.0" prefWidth="314.0" />
+                              <ImageView fx:id="trendyol_settings_back_icon" fitHeight="41.0" fitWidth="40.0" layoutX="21.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons/back_icon.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logos/trendyol_logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="anchor_page_hepsiburada_settings" prefHeight="668.0" prefWidth="1024.0" visible="false">
+                           <children>
+                              <Text layoutX="30.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEPSİBURADA SUPPLIER ID:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="30.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="API KEY :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="30.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="API SECRET :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="hepsiburada_settings_merchant_id" focusTraversable="false" layoutX="221.0" layoutY="157.0" prefHeight="27.0" prefWidth="314.0" />
+                              <TextField fx:id="hepsiburada_settings_username" focusTraversable="false" layoutX="221.0" layoutY="197.0" prefHeight="27.0" prefWidth="314.0" />
+                              <TextField fx:id="hepsiburada_settings_password" focusTraversable="false" layoutX="221.0" layoutY="237.0" prefHeight="27.0" prefWidth="314.0" />
+                              <ImageView fx:id="hepsiburada_settings_back_icon" fitHeight="41.0" fitWidth="40.0" layoutX="21.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons/back_icon.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logos/hepsiburada_logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Ürünler">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                      <AnchorPane layoutY="106.0" minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="583.0">
+                           <children>
+                              <TableView fx:id="products_table" editable="true" layoutX="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="556.0" prefWidth="585.0">
+                                <columns>
+                                    <TableColumn id="id" fx:id="products_table_product_id" prefWidth="34.0" />
+                                  <TableColumn id="barcode" fx:id="products_table_column_barcode" prefWidth="160.0" text="Barkodu" />
+                                  <TableColumn id="sku" fx:id="products_table_column_sku" prefWidth="127.0" text="Stok Kodu" />
+                                    <TableColumn id="stock_name" fx:id="products_table_column_stock_name" prefWidth="262.0" text="Ürün Adı" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <TextField fx:id="products_page_barcode_input" layoutX="14.0" layoutY="64.0" prefHeight="27.0" prefWidth="172.0" promptText="Ürünün Barkodu" />
+                        <ChoiceBox fx:id="products_page_location_status" layoutX="214.0" layoutY="27.0" prefHeight="27.0" prefWidth="172.0" />
+                        <Text fill="#ababab" layoutX="410.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bağlantı Durumu">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#ababab" layoutX="215.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Konumu">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="products_page_sku_input" layoutX="214.0" layoutY="64.0" prefHeight="27.0" prefWidth="172.0" promptText="Ürünün Stok Kodu" />
+                        <TextField fx:id="products_page_product_name_input" layoutX="14.0" layoutY="27.0" prefHeight="27.0" prefWidth="172.0" promptText="Ürün Adı" />
+                        <Button fx:id="products_page_do_filter_button" layoutX="523.0" layoutY="27.0" mnemonicParsing="false" text="Fİltrele" />
+                        <ChoiceBox fx:id="products_page_active_status" layoutX="410.0" layoutY="27.0" prefHeight="27.0" prefWidth="99.0" />
+                        <TabPane fx:id="products_page_right_pane_tab_pane" layoutX="593.0" layoutY="26.0" prefHeight="636.0" prefWidth="424.0" style="-fx-border-color: #D3D3D3;" tabClosingPolicy="UNAVAILABLE" visible="false">
+                          <tabs>
+                            <Tab text="Genel">
+                                 <content>
+                                    <AnchorPane prefHeight="638.0" prefWidth="421.0">
+                                       <children>
+                                          <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="14.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icons/merchants_icons/icon_akinsoft.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="14.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icons/merchants_icons/icon_trendyol.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="14.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icons/merchants_icons/icon_hepsiburada.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="14.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icons/merchants_icons/icon_n11.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="14.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icons/merchants_icons/icon_gittigidiyor.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="14.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icons/merchants_icons/icon_woocommerce.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="#909090" layoutX="365.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bağlantı" wrappingWidth="50.0">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <CheckBox fx:id="products_page_right_pane_check_akinsoft" layoutX="379.0" layoutY="255.0" mnemonicParsing="false" />
+                                          <CheckBox fx:id="products_page_right_pane_check_trendyol" layoutX="379.0" layoutY="305.0" mnemonicParsing="false" />
+                                          <CheckBox fx:id="products_page_right_pane_check_hepsiburada" layoutX="379.0" layoutY="355.0" mnemonicParsing="false" />
+                                          <CheckBox fx:id="products_page_right_pane_check_n11" layoutX="379.0" layoutY="405.0" mnemonicParsing="false" />
+                                          <CheckBox fx:id="products_page_right_pane_check_gittigidiyor" layoutX="379.0" layoutY="455.0" mnemonicParsing="false" />
+                                          <CheckBox fx:id="products_page_right_pane_check_woocommerce" layoutX="379.0" layoutY="505.0" mnemonicParsing="false" />
+                                          <ImageView fx:id="products_page_right_pane_image" fitHeight="156.0" fitWidth="120.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icons/no-image-icon.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <TextArea id="no-border-textarea" fx:id="products_page_right_pane_product_infos" editable="false" layoutX="135.0" layoutY="14.0" prefHeight="109.0" prefWidth="272.0" wrapText="true" />
+                                          <Text fill="#ababab" layoutX="68.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Muhasebe Programları İçin Piyasa Fiyatı Alış Fiyatıdır">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="products_page_right_pane_1x1" alignment="CENTER" layoutX="76.0" layoutY="247.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_1x2" alignment="CENTER" layoutX="176.0" layoutY="247.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_1x3" alignment="CENTER" layoutX="276.0" layoutY="247.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_2x3" alignment="CENTER" layoutX="276.0" layoutY="297.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_2x2" alignment="CENTER" layoutX="176.0" layoutY="297.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_2x1" alignment="CENTER" layoutX="76.0" layoutY="297.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_3x1" alignment="CENTER" layoutX="76.0" layoutY="347.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_3x2" alignment="CENTER" layoutX="176.0" layoutY="347.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_3x3" alignment="CENTER" layoutX="276.0" layoutY="347.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_4x3" alignment="CENTER" layoutX="276.0" layoutY="397.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_4x2" alignment="CENTER" layoutX="176.0" layoutY="397.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_4x1" alignment="CENTER" layoutX="76.0" layoutY="397.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_5x1" alignment="CENTER" layoutX="76.0" layoutY="447.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_5x2" alignment="CENTER" layoutX="176.0" layoutY="447.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_5x3" alignment="CENTER" layoutX="276.0" layoutY="447.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_6x3" alignment="CENTER" layoutX="276.0" layoutY="497.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_6x2" alignment="CENTER" layoutX="176.0" layoutY="497.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <TextField fx:id="products_page_right_pane_6x1" alignment="CENTER" layoutX="76.0" layoutY="497.0" prefHeight="27.0" prefWidth="81.0" promptText="-" />
+                                          <Text fill="#909090" layoutX="284.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Satış Fiyatı" wrappingWidth="71.0">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#909090" layoutX="182.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Piyasa Fiyatı" wrappingWidth="71.0">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#909090" layoutX="82.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kalan Miktar" wrappingWidth="71.0">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="products_page_right_pane_button_save" layoutX="342.0" layoutY="567.0" mnemonicParsing="false" text="Kaydet" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                            <Tab text="Fiyat Rekabet">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                        <AnchorPane fx:id="anchor_products_page_right_pane_multiple_selection" layoutX="592.0" layoutY="107.0" prefHeight="552.0" prefWidth="421.0" visible="false">
+                           <children>
+                              <CheckBox fx:id="products_page_right_pane_check_trendyol_multi" layoutX="44.0" layoutY="89.0" mnemonicParsing="false" text="Trendyol" />
+                              <CheckBox fx:id="products_page_right_pane_check_akinsoft_multi" layoutX="44.0" layoutY="121.0" mnemonicParsing="false" text="Akınsoft" />
+                              <CheckBox fx:id="products_page_right_pane_check_n11_multi" layoutX="44.0" layoutY="153.0" mnemonicParsing="false" text="N11" />
+                              <CheckBox fx:id="products_page_right_pane_check_gittigidiyor_multi" layoutX="154.0" layoutY="89.0" mnemonicParsing="false" text="Gittigidiyor" />
+                              <CheckBox fx:id="products_page_right_pane_check_hepsiburada_multi" layoutX="154.0" layoutY="121.0" mnemonicParsing="false" text="Hepsiburada" />
+                              <CheckBox fx:id="products_page_right_pane_check_woocommerce_multi" layoutX="154.0" layoutY="153.0" mnemonicParsing="false" text="Woocommerce" />
+                              <Button layoutX="41.0" layoutY="191.0" mnemonicParsing="false" prefHeight="27.0" text="Stok Fark Tespiti" />
+                              <Text fill="#ababab" layoutX="44.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seçilenleri">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="41.0" layoutY="229.0" mnemonicParsing="false" text="Excel e Aktar" />
+                              <Button fx:id="products_page_right_pane_connect_products" layoutX="308.0" layoutY="97.0" mnemonicParsing="false" prefHeight="6.0" prefWidth="53.0" text="Bağla">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="products_page_right_pane_disconnect_products" layoutX="308.0" layoutY="132.0" mnemonicParsing="false" prefHeight="6.0" prefWidth="53.0" text="Ayır">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="anchor_loading_pane" layoutX="674.0" layoutY="252.0" prefHeight="269.0" prefWidth="260.0" visible="false">
+                           <children>
+                              <ProgressIndicator layoutX="87.0" layoutY="36.0" prefHeight="83.0" prefWidth="87.0" />
+                              <Text fill="#656565" layoutX="30.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bu işlem seçilen ürün miktarına göre birkaç dakika sürebilir. İşlem bittiğinde raporlar sekmesinden yapılan değişiklikleri görebilirsiniz." textAlignment="CENTER" wrappingWidth="200.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <TextField fx:id="products_page_quantity_input" layoutX="410.0" layoutY="64.0" prefHeight="27.0" prefWidth="172.0" promptText="Stok Aralığı (1-5)" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Siparişlerim">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            </content>
+          </Tab>
+            <Tab text="Raporlar">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <TextArea fx:id="logs_page_textarea" editable="false" layoutX="14.0" layoutY="63.0" prefHeight="581.0" prefWidth="996.0" />
+                        <DatePicker fx:id="logs_page_datepicker" layoutX="14.0" layoutY="20.0" />
+                        <Button fx:id="logs_page_button_filter" layoutX="432.0" layoutY="20.0" mnemonicParsing="false" text="Filtrele" />
+                        <ChoiceBox fx:id="logs_page_choicebox_1" layoutX="249.0" layoutY="20.0" prefWidth="150.0" />
+                        <Text fill="#a1a1a1" layoutX="522.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alınan hata raporlarını geliştiriciye iletip çözüme ulaşabilirsiniz." wrappingWidth="411.2060546875" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
