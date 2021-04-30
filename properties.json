@@ -1,18 +1,18 @@
 {
   "trendyol_api_properties": {
-    "api_key": "uplX1EcU91N68R7gXMwW",
-    "supplier_id": "226811",
-    "api_secret": "y81rrXM0KwqGQKpvoozB"
+    "api_key": "123123",
+    "supplier_id": "123123",
+    "api_secret": "123123"
   },
   "lastdatetimelong": 1606252332326,
   "akinsoft_properties": {
     "pass": "masterkey",
-    "host": "jdbc:firebirdsql://25.74.233.114:3050/C:/AKINSOFT/Wolvox7/Database_FB/yagmur2017/2017/WOLVOX.FDB?charSet\u003dutf-8",
+    "host": "jdbc:firebirdsql://192.168.1.1/C:/AKINSOFT/Wolvox7/Database_FB/sirket/2020/WOLVOX.FDB?charSet\u003dutf-8",
     "user": "SYSDBA"
   },
   "hepsiburada_api_properties": {
-    "password": "Hb12345!",
-    "merchant_id": "b874aed0-d57e-4b51-8e3a-7d1a4a3223b7",
-    "username": "yagmurkultur_dev"
+    "password": "123123!",
+    "merchant_id": "bhg-sdfvd-sdfvsw",
+    "username": "deneme"
   }
 }
